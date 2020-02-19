@@ -63,7 +63,6 @@ handleFormSubmit(e){
      if(res.message==='Auth successfull'){
        console.log("success");
        this.props.history.push('/cals');
-       window.location.reload(false);
      }else{
          this.setState({
            errorStatus:res.success,

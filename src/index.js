@@ -11,7 +11,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={App} />
-      <Route path="/cals" component={Calculation}/>
+      <Route exact path="/cals" component={Calculation}/>
     </Switch>
   </BrowserRouter>, document.getElementById('root')
 );
