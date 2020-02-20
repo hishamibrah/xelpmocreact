@@ -3,7 +3,7 @@ import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Input } from 'semantic-ui-react';
 import Button from '@material-ui/core/Button';
-import WithAuth from '../withAuth';
+import withAuth from '../withAuth';
 
 
 class Calculation extends Component {

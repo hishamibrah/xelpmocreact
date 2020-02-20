@@ -8,7 +8,7 @@ export default function withAuth(AuthComponent) {
         constructor() {
             super();
             this.state = {
-                user: null
+                email:null
             }
         }
         componentWillMount() {
@@ -19,7 +19,7 @@ export default function withAuth(AuthComponent) {
                 try {
                     const profile = Auth.getProfile()
                     this.setState({
-                        user: profile
+                        email: profile
                     })
                 }
                 catch(err){
@@ -30,9 +30,9 @@ export default function withAuth(AuthComponent) {
         }
 
         render() {
-            if (this.state.user) {
+            if (this.state.email) {
                 return (
-                    <AuthComponent history={this.props.history} user={this.state.user} />
+                    <AuthComponent history={this.props.history} email={this.state.email} />
                 )
             }
             else {

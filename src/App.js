@@ -13,14 +13,14 @@ class App extends Component {
           <div className="AppAside"></div>
           <div className="AppForm">
             <div className="PageSwitcher">
-                <NavLink to="/sign-in" activeClassName="PageSwitcherItemActive" className="PageSwitcherItem">Sign In</NavLink>
+                <NavLink  exact to="/sign-in" activeClassName="PageSwitcherItemActive" className="PageSwitcherItem">Sign In</NavLink>
                 <NavLink exact to="/" activeClassName="PageSwitcherItemActive" className="PageSwitcherItem">Sign Up</NavLink>
               </div>
               <div className="FormTitle">
-                  <NavLink to="/sign-in" activeClassName="FormTitleLinkActive" className="FormTitleLink">Sign In</NavLink> or <NavLink exact to="/" activeClassName="FormTitleLink--Active" className="FormTitleLink">Sign Up</NavLink>
+                  <NavLink exact to="/sign-in" activeClassName="FormTitleLinkActive" className="FormTitleLink">Sign In</NavLink> or <NavLink exact to="/" activeClassName="FormTitleLink--Active" className="FormTitleLink">Sign Up</NavLink>
               </div>
               <Route exact path="/" component={SignUpForm}/>
-              <Route path="/sign-in" component={SignInForm}/>
+              <Route exact path="/sign-in" component={SignInForm}/>
           </div>
         </div>
       </BrowserRouter>

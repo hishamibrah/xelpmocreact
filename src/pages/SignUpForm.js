@@ -60,7 +60,7 @@ class SignUpForm extends Component {
 
               <div className="FormField">
                 <button className="FormFieldButton mr-20" type="signup">Sign Up</button>
-                <Link to="/signin" className="FormFieldLink">I'm already member</Link>
+                <Link exact to="/signin" className="FormFieldLink">I'm already member</Link>
               </div>
             </form>
           </div>
